@@ -4,33 +4,33 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-desktop.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(56, 56, 56, 0.11);
-  --stroke-color-hover: #47E3A0;
+  --stroke-color-hover: #47e3a0;
   --highlight-color: rgba(56, 56, 56, 0.11);
   --switch-bg-url: url(./assets/moon-stars.svg);
-  }
+}
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0,0,0, 0.5);
+  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --stroke-color-hover: #47E3A0;
+  --stroke-color-hover: #47e3a0;
   --switch-bg-url: url(./assets/sun.svg);
-
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
@@ -53,7 +53,7 @@ body * {
 
 #profile p {
   font-weight: 500;
-  line-height:4px;
+  line-height: 4px;
   margin-top: 24px;
 }
 
@@ -84,12 +84,12 @@ body * {
   left: initial;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
-  border: 1px solid #47E3A0;
+  border: 1px solid #47e3a0;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
@@ -129,7 +129,7 @@ ul li a {
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--stroke-color-hover)
+  border: 1.5px solid var(--stroke-color-hover);
 }
 
 /* social links */
@@ -148,18 +148,27 @@ ul li a:hover {
   justify-content: center;
   padding: 16px;
 
- transition: background 0.2s;
- border-radius: 50%;
- border: 1.5px solid transparent;
+  transition: background 0.2s;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
 }
 
 #social-links a:hover {
   background: var(--highlight-color);
-  border: 1.5px solid #47E3A0;
+  border: 1.5px solid #47e3a0;
 }
 
-footer{
+footer {
   padding-bottom: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg--url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./asssets/bg-desktop-light);
+  }
 }

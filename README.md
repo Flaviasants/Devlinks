@@ -34,6 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
+Você pode visualizar o projeto em funcionamento através [DESSE LINK](https://flaviasants.github.io/Devlinks/).
 
 ## 🔖 Layout
 

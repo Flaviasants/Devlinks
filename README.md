@@ -46,4 +46,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Desenvolvido por Flávia Santos ♥ 
+Feito com ♥ por Flávia Santos e instruído pela Rocketseat :wave: [Participe da comunidade!](https://discord.gg/rocketseat)
